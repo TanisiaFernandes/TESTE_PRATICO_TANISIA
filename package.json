@@ -1,0 +1,27 @@
+{
+  "name": "teste_pratico_tanisia",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run"
+  },
+  "keywords": [],
+  "author": "Tanisia Pack Fernandes",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^15.16.0"
+  },
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^24.0.1",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.8"
+  },
+"cypress-cucumber-preprocessor": {
+    "stepDefinitions": [
+      "cypress/e2e/**/*.js",
+      "cypress/support/step_definitions/**/*.js"
+    ]
+  }
+}
